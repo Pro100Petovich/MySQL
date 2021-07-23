@@ -3,4 +3,5 @@ update friend_request set target_user_id = (select id from users where id !=targ
 
 --4 number
 /* 
-Я считаю что оптимальным сервисом для меня будет netflix
+*Я считаю что оптимальным сервисом для меня будет netflix
+*/
