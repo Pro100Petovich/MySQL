@@ -1,0 +1,10 @@
+-- 1 number
+select id from users union select user_id from orders;
+
+-- 2 number
+SELECT
+  id,
+  name,
+  (SELECT name FROM catalogs WHERE id = catalog_id) AS 'catalog'
+FROM
+  products;
