@@ -1,0 +1,7 @@
+-- 1 number
+update friend_request set target_user_id = (select id from users where id !=target_user_id order by rand() limit 1) where initiator_user_id = target_user_id;
+
+--4 number
+/* 
+*Я считаю что оптимальным сервисом для меня будет netflix
+*/
